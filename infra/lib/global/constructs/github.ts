@@ -21,8 +21,8 @@ export class GithubConstruct extends Construct {
   constructor(scope: Construct, id: string, props: GithubConstructProps) {
     super(scope, id);
 
-    // this.createGithubActionsRole(props);
-    // this.addPolicies(props);
+    this.createGithubActionsRole(props);
+    this.addPolicies(props);
   }
 
   private createGithubActionsRole(props: GithubConstructProps): void {
